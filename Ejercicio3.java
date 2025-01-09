@@ -2,7 +2,7 @@ package Relacion9;
 
 public class Ejercicio3 {
     public static void main(String[] args) {
-        Animal animal1 = new Animal("Perro", 5, 5, "Domestico");
+        Animal animal1 = new Animal("Lobo Gris", 7, 60, "Asia, Norte América y Europa");
         animal1.pesar();
         animal1.edad();
         animal1.vivir();

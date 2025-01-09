@@ -4,5 +4,6 @@ public class Mundial {
     int pais;
     String paisAnfitrion;
     String campeon;
+    int año;
 }
 

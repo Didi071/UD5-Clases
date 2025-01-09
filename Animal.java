@@ -6,13 +6,13 @@ public class Animal {
     String nombreCientifico;
     String familia;
     String estado;
-    int edad; 
+    int espVida; 
     double peso;
     String habitat; 
 
     public Animal(String nombre, int edad, int peso, String habitat) {
         this.peso = peso;
-        this.edad = edad;
+        this.espVida = espVida;
         this.nombre = nombre;
         this.habitat = habitat;
     }
@@ -22,7 +22,7 @@ public class Animal {
     }
 
     public void edad() {
-        System.out.println(nombre + " tiene " + edad + " años");
+        System.out.println(nombre + " tiene una esperanza de vida de " + espVida + " años");
     }
 
     public void vivir() {
