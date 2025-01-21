@@ -20,7 +20,11 @@ public class PruebaFraccion {
         Fraccion f2=new Fraccion(numeradorf2,denominadorf2);
         //Invertir
         f1.invertir();
+
         //Maximo Divisor
+        f1.mcm();
+
+        //Simplificar
         f1.simplificar();
 
 

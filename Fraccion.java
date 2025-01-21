@@ -2,6 +2,7 @@ package Relacion9;
 
 public class Fraccion {
     //Atributos
+    int maxDivisor;
     int numerador;
     int denominador;
     //Métodods
@@ -24,7 +25,6 @@ public class Fraccion {
         //encontrar mayor y menor (divisor y dividendo)
         int dividendo;
         int divisor;
-        int maxDivisor;
         int resto;
         if (numerador>denominador) {
             dividendo = numerador;
