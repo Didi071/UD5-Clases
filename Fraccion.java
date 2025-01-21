@@ -18,8 +18,9 @@ public class Fraccion {
         denominador= temp;
         System.out.println("La fraccion invertida es " + numerador + "/"+ denominador);
     }
-    //simplifica
-    public void simplificar (){
+
+    //encontrar el maximo como un divisor
+    public void mcm(){
         //encontrar mayor y menor (divisor y dividendo)
         int dividendo;
         int divisor;
@@ -43,10 +44,13 @@ public class Fraccion {
             maxDivisor = dividendo;
         }
         System.out.println("El máximo divisor común es: " + maxDivisor);
-        //simplificar
-        int newNumerador = numerador / maxDivisor;
-        int newDenominador = denominador / maxDivisor;
-        System.out.printf("La fracción simplificada es %d/%d", newNumerador, newDenominador );
+    }
+
+    //simplifica
+    public void simplificar (){
+        numerador = numerador / maxDivisor;
+        denominador = denominador / maxDivisor;
+        System.out.printf("La fracción simplificada es %d/%d", numerador, denominador );
         System.out.println();
     }
     //get denominador y numerador
@@ -66,6 +70,7 @@ public class Fraccion {
         Fraccion f3 = new Fraccion(f1.numerador*f2.denominador, f1.denominador*f2.numerador);
         return f3;
     }
-    
+    //Static se usa para llamar Fraccion.multiplicar(f1 * f2)
+    //Public se usa para llamar f1.simplificar()
 
 }
